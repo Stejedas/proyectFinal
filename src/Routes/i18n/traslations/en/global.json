@@ -1,0 +1,140 @@
+{
+    "header":{
+        "enl1": "Participating Restaurants",
+        "enl2": "Who are?",
+        "enl3": "Register",
+        "enl4": "Enter",
+        "x1": "Welcome: "
+    },
+
+    "login":{
+        "x1": "Sing In",
+        "x2": "Log In",
+        "x3": "Email",
+        "x4": "Enter your email",
+        "x5": "Password",
+        "x6": "Enter your password",
+        "x7": "or",
+        "x8": "Register with google",
+        "x9": "  I accept TheLastTable's Privacy Policy",
+        "x10": "Send",
+        "x11": "Enter with Google",
+        "x12": "Forgotten your password?",
+        "x13": "Remember me"
+    },
+    "verify":{
+        "x1": "We are processing your request, please wait a moment while your request is being processed"
+        
+      
+    },
+    "footer":{
+        "x1": "Home",
+        "x2": "Features",
+        "x3": "Privacy Policy",
+        "x4": "FAQs",
+        "x5": "Are you a Restaurant?",
+        "x6": "Become a member"        
+    },
+    "signCompany": {
+        "x1": "UserData:",
+        "x2": "UserName",
+        "x3": "Password",
+        "x4": "Confirm Password",
+        "x5": "Company Data:",
+        "x6": "Company Name",
+        "x7": "Commercial Name for the Web",
+        "x8": "C.P.",
+        "x9": "Contact person",
+        "x10": "Position",
+        "x11": "Town",
+        "x12": "Address",
+        "x13": "C. Postal",
+        "x14": "Contact: ",
+        "x15": "Phone (Mobile)",
+        "x16": "Phone (Secondary)",
+        "x17": "Email",
+        "x18": "CIF",
+        "x19": "Latitude",
+        "x20": "Longitude"      
+    },
+    "home":{
+        "saludo": "hello bootcamp"
+    },
+    "logOut":{
+        "x1": "Log Out"
+    },
+    "supplier":{
+        "x1": "Current Offers",
+        "x2": "Offers History",
+        "x3": "Add",
+        "x4": "Add a New Offer",
+        "x5": "Close",
+        "x6": "Modificate a Offer",
+        "x7": "Delete a Offer",
+        "x8": "Reserves"
+    }, 
+    
+    "tableTwo":{
+        "x1": "Day",
+        "x2": "Time",
+        "x3": "Menu",
+        "x4": "Price/Unit",
+        "x5": "Price/Total",
+        "x7": "Diners",
+        "x8": "ID",
+        "x9": "Reservation status",
+        "x10": "SPA",
+        "x11": "ENG"
+    },
+    "supplierMenu":{
+        "x1": "Restaurant Address ",
+        "x2": "Postal Code: ",
+        "x3": "City: ",
+        "x4": "Address: ",
+        "x5": "Data as Company",
+        "x6": "Company Name: ",
+        "x7": "Trade Name: ",
+        "x8": "CIF: ",
+        "x9": "Contact details ",
+        "x10": "Email: ",
+        "x11": "Contact person: ",
+        "x12": "Tlf:",
+        "x13": "LOGOUT",
+        "x14": "Tlf2: "
+    },
+    "map":{
+        "x1": "Click on the map icon to view more details",
+        "x2": "See restaurant offers"
+    },
+    "customer":{
+        "x1": "See more",
+        "x2": "Diners: ",
+        "x3": "Total table: "
+    
+    },
+    "typeFood":{
+        "x1": "Standard",
+         "x2": "Japanese",
+          "x3": "Asian",
+          "x4": "Chinese",
+          "x5": "American",
+          "x6": "Fast food",
+          "x7": "Vegan"
+    },
+    "books":{
+        "x1": " You are about to make the following reservation, please check it before accepting",
+        "x2": "Reserve",
+        "x3": "Cancel",
+        "x4": "Reserve Table",
+        "x5": "You are about to accept the reservation in ",
+        "x6": " for ",
+        "x7": " persons, for a total value of ",
+        "x8": " €"
+    },
+    "rate":{
+        "x1": "Let us know what you think",
+        "x2": "Send"
+
+    }
+    
+}

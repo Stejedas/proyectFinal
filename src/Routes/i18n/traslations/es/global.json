@@ -1,0 +1,138 @@
+{
+    "header":{
+        "enl1": "Restaurantes Adheridos",
+        "enl2": "¿Quienes somos?",
+        "enl3": "Registrate",
+        "enl4": "Inicia Sesion",
+        "x1": "Bienvenido: "
+    },
+    "login":{
+        "x1": "Registrate",
+        "x2": "Iniciar sesión",
+        "x3": "Email",
+        "x4": "Introduzca su email",
+        "x5": "Contraseña",
+        "x6": "Introduzca su contraseña",
+        "x7": "or",
+        "x8": "Registrese con Google",
+        "x9": "  Acepto la política de privacidad de TheLastTable",
+        "x10": "Entrar",
+        "x11": "Entrar con Google",
+        "x12": "Olvidé mi contraseña",
+        "x13": "Recordar contraseña"
+    },
+    "verify":{
+        "x1": "Estamos procesando su solicitud, espero un momento mientras se realiza"
+    },
+    "footer":{
+        "x1": "Inicio",
+        "x2": "Características",
+        "x3": "Politica de privacidad",
+        "x4": "FAQs",
+        "x5": "¿Eres un Restaurante?",
+        "x6": "Hazte adherido"
+
+    },
+    "signCompany": {
+        "x1": "Datos Usuario:",
+        "x2": "Usuario",
+        "x3": "Contaseña",
+        "x4": "Confirmar Contraseña",
+        "x5": "Datos Empresa:",
+        "x6": "Nombre Empresa",
+        "x7": "Nombre Comercial",
+        "x8": "C.P.",
+        "x9": "Persona de contacto",
+        "x10": "Cargo",
+        "x11": "Poblacion",
+        "x12": "Domicilio",
+        "x13": "C. Postal",
+        "x14": "Contacto: ",
+        "x15": "Telefono (Obligatorio)",
+        "x16": "Telefono (Secundario",
+        "x17": "Email",
+        "x18": "CIF",
+        "x19": "Latitud",
+        "x20": "Longitud"  
+    },
+    "home":{
+        "saludo": "hola bootcamp"
+    }, 
+    "logOut":{
+        "x1": "Cerrar Sesion"
+    },
+    "supplier":{
+        "x1": "Ofertas Actuales",
+        "x2": "Historico de Ofertas",
+        "x3": "Añadir",
+        "x4": "Agregar una Nueva Oferta",
+        "x5": "Cerrar",
+        "x6": "Modificar Oferta",
+        "x7": "Eliminar Oferta",
+        "x8": "Reservas"
+
+    }, 
+    "tableTwo":{
+        "x1": "Día",
+        "x2": "Hora",
+        "x3": "Menu",
+        "x4": "Precio/Unitario",
+        "x5": "Precio/Total",
+        "x6": "Comida/Cena",
+        "x7": "Comensales",
+        "x8": "ID",
+        "x9": "Estado reserva",
+        "x10": "ESP",
+        "x11": "ING"
+    } ,
+    "supplierMenu":{
+        "x1": "Direccion Restaurante ",
+        "x2": "Codigo Postal: ",
+        "x3": "Ciudad: ",
+        "x4": "Direccion: ",
+        "x5": "Datos como Empresa",
+        "x6": "Nombre Sociedad: ",
+        "x7": "Nombre Comercial: ",
+        "x8": "CIF: ",
+        "x9": "Datos de contacto ",
+        "x10": "Email: ",
+        "x11": "Persona de contacto: ",
+        "x12": "Tlf: ",
+        "x13": "Cerrar Sesion",
+        "x14": "Tlf2: "
+    },
+    "map":{
+        "x1": "Haga Click en el icono del mapa para ver mas detalles",
+        "x2": "Ver sus ofertas"
+    },
+    "customer":{
+        "x1": "Ver más",
+        "x2": "Comensales: ",
+        "x3": "Total mesa: "
+    
+    },
+    "typeFood":{
+        "x1": "Estándar",
+         "x2": "Japonés",
+          "x3": "Asiático",
+          "x4": "Chino",
+          "x5": "Americano",
+          "x6": "Comida rápida",
+          "x7": "Vegano"
+    },
+    "books":{
+        "x1": "Va a realizar la siguiente reserva, revísela antes de aceptar",
+        "x2": "Reservar",
+        "x3": "Cancelar",
+        "x4": "Reservar Mesa",
+        "x5": "Esta a punto de aceptar la reserva en ",
+        "x6": " para ",
+        "x7": " personas, por un valor total de ",
+        "x8": " €"
+    },
+    "rate":{
+        "x1": "Dejenos su opinion",
+        "x2": "Enviar"
+    }
+    
+}

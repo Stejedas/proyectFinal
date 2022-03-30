@@ -1,0 +1,8 @@
+.imgMenuBg{
+    background-image: url('../../Assets/Home/Carrusell/bar.jpg');
+    background-size: 100% 100%;
+}
+
+.bdRadiusCarr{
+    border-radius: 25px;
+}

@@ -1,0 +1,10 @@
+.scroll__container {
+    display: flex;
+    overflow-x: auto;
+  }
+  
+.sizeLettersID{
+    font-size: 12px;
+
+
+}

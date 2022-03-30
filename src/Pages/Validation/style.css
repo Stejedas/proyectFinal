@@ -1,0 +1,28 @@
+@media (min-width:320px)  { 
+    .textVerify{
+        font-size: 25px;
+    }
+    .counterVerify{
+        border-radius: 50%;
+        font-size: 50px;
+    }
+}
+@media (min-width:641px)  { 
+    .counterVerify{
+        border-radius: 50%;
+        font-size: 50px;
+    }
+ }
+@media (min-width:1025px) { 
+    .textVerify{
+        font-size: 35px;
+    }
+    .counterVerify{
+        border-radius: 50%;
+        font-size: 50px;
+    }
+}
+
+.bg_blue{
+    background-color: blue;
+}

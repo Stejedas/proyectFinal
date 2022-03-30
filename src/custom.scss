@@ -1,0 +1,116 @@
+// Color system
+
+// scss-docs-start primary-color-variables
+
+$lightprimary-100: #FFF9CC !default;
+
+$lightgrey-normal: #cfd8dc !default;
+$lightgrey-light: #ffffff !default;
+$lightgrey-dark: #9ea7aa !default;
+
+$lighttable-normal: #eeeeee !default;
+$lighttable-light: #ffffff !default;
+$lighttable-dark: #bcbcbc !default;
+
+$lightblue-normal: #b2dfdb !default;
+$lightblue-light: #e5ffff !default;
+$lightblue-dark: #81ada9 !default;
+$lightblue-dark-trans: rgb(129, 173, 169, 0.7);
+
+$lightcard-normal: #ffe0b2 !default;
+$lightcard-light: #ffffff !default;
+$lightcard-dark: #cccab5 !default;
+
+$lightback-normal: #ffffff !default;
+
+$lightcardbanner-normal: #dcedc8 !default;
+
+$darkgrey-normal: #37464f !default;
+$darkgrey-light: #62717b !default;
+$darkgrey-dark: #101f27 !default;
+
+$darktable-normal: #616161 !default;
+$darktable-light: #8e8e8e !default;
+$darktable-dark: #373737 !default;
+
+$darkblue-normal: #37474f !default;
+$darkblue-light: #62727b !default;
+$darkblue-dark: #102027 !default;
+$darkblue-dark-trans: rgb(16, 32, 39, 0.7);
+
+$darkcard-normal: #6d4c41 !default;
+$darkcard-light: #9c786c !default;
+$darkcard-dark: #40241a !default;
+
+$darkback-normal: #41545e !default;
+
+$darkcardbanner-normal: #546e7a !default;
+// scss-docs-start neutral-color-variables
+
+$white: #FFFFFF !default;
+$white-070: #F7F7F7 !default;
+$black: #000000 !default;
+
+
+
+
+
+
+$theme-colors: (
+
+    "lightprimary-100": $lightprimary-100,
+    "lightgrey-normal": $lightgrey-normal,
+    "lightgrey-light": $lightgrey-light,
+    "lightgrey-dark": $lightgrey-dark,
+
+    "lighttable-normal": $lighttable-normal,
+    "lighttable-light": $lighttable-light,
+    "lighttable-dark": $lighttable-dark,
+
+    "lightblue-normal": $lightblue-normal,
+    "lightblue-light": $lightblue-light,
+    "lightblue-dark": $lightblue-dark,
+    "lightblue-dark-trans": $lightblue-dark-trans,
+    
+    "lightcard-normal": $lightcard-normal,
+    "lightcard-light": $lightcard-light,
+    "lightcard-dark": $lightcard-dark,
+
+    "lightback-normal": $lightback-normal,
+
+    "lightcardbanner-normal": $lightcardbanner-normal,
+
+    "darkgrey-normal": $darkgrey-normal,
+    "darkgrey-light": $darkgrey-light,
+    "darkgrey-dark": $darkgrey-dark,
+
+    "darktable-normal": $darktable-normal,
+    "darktable-light": $darktable-light,
+    "darktable-dark": $darktable-dark,
+
+    "darkblue-normal": $darkblue-normal,
+    "darkblue-light": $darkblue-light,
+    "darkblue-dark": $darkblue-dark,
+    "darkblue-dark-trans": $darkblue-dark-trans,
+
+    "darkcard-normal": $darkcard-normal,
+    "darkcard-light": $darkcard-light,
+    "darkcard-dark": $darkcard-dark,
+
+    "darkback-normal": $darkback-normal,
+
+    "darkcardbanner-normal": $darkcardbanner-normal,
+
+    "white": $white,
+    "white-070": $white-070,
+    "black": $black,
+
+ 
+);
+
+
+
+
+
+
+@import "~bootstrap/scss/bootstrap.scss";
