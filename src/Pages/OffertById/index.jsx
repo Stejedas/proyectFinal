@@ -11,11 +11,21 @@ import { HiOutlineBadgeCheck } from 'react-icons/hi'
 import { MdOutlineToday } from 'react-icons/md'
 import { Modal, Button } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
+import { useContext } from 'react'
+import { ThemingContext } from "../../Components/mult-theming/theming.context";
+import espFlg from '../../Assets/Home/Carrusell/espFlg.png'
+import ukFlg from '../../Assets/Home/Carrusell/ukFlg.png'
+import { useNavigate } from "react-router-dom";
+
 
 
 function OfferById() {
 
     const [t, i18n] = useTranslation("global");
+
+    const [theming] = useContext(ThemingContext);
+
+    let navigate = useNavigate();
 
     const { offer } = useParams();
     const [menuData, uploadMenudata] = useState()
@@ -55,43 +65,44 @@ function OfferById() {
         PostBook(book,token )
 
         handleClose()
+        navigate(`/customer/${menuData[0].idOffer}`)
     }
  
 
     return (
         <React.Fragment>
             <HeaderCustom></HeaderCustom>
-            <Container className="w-100 pt-2" fluid>
+            <Container className="w-100 pt-3" fluid style={{color: `${theming.whiteBlack.code}`, 'background-color': `${theming.backA.code}`}}> 
                 {
                     menuData ?
                         <Row className="pt-2">
                             <Col xs={12}>
-                                <div style={{ height: '850px' }}>
+                                <div style={{ 'min-height': '700px' }}>
                                     <Container>
                                         <Row>
                                             <Col xl={{ span: 4, offset: 1 }}>
                                                 <Row>
-                                                    <Col xs={4}>
-                                                        <p className="fs-3 text-center"><MdOutlineToday className="mx-2 mb-1" />{menuData?.[0].hour}</p>
+                                                    <Col xs={5} className='p-2 d-flex justify-content-center  align-items-center h-100' >
+                                                        <p className="fs-5 p-3 px-3 m-0 w-100 text-center" style={{border: `2px solid ${theming.whiteBlack.code}`, 'border-radius': '15px' }}><MdOutlineToday className="fs-3 mx-2" />{menuData?.[0].hour}</p>
                                                     </Col>
-                                                    <Col xs={8}>
-                                                        <p className="fs-3 text-center"><BsClockHistory className="mx-2 mb-1" />{menuData?.[0].day}</p>
+                                                    <Col xs={7} className='p-2 d-flex justify-content-center  align-items-center h-100'>
+                                                        <p className="fs-5 p-3 px-3 m-0 w-100 text-center" style={{border: `2px solid ${theming.whiteBlack.code}`, 'border-radius': '15px' }}><BsClockHistory className="fs-3 mx-2" />{menuData?.[0].day}</p>
                                                     </Col>
                                                     
                                                 </Row>
                                                 <Row>
-                                                    <Col xs={4}>
-                                                        <p className="fs-3 text-center"><BsPersonCircle className="mx-2 mb-1" />{menuData?.[0].diners}</p>
+                                                    <Col xs={5} className='p-2 d-flex justify-content-center  align-items-center h-100'>
+                                                        <p className="fs-5 p-3 px-3 m-0 w-100 text-center" style={{border: `2px solid ${theming.whiteBlack.code}`, 'border-radius': '15px' }}><BsPersonCircle className="fs-3 mx-2" />{menuData?.[0].diners}</p>
                                                     </Col>
-                                                    <Col xs={8}>
-                                                        <p className="fs-3 text-center"><GrMoney className="mx-2 mb-1" />{menuData?.[0].pUni} €/<BsPersonPlusFill className=" mb-1" /></p>
+                                                    <Col xs={7} className='p-2 d-flex justify-content-center  align-items-center h-100'>
+                                                        <p className="fs-5 p-3 px-3 m-0 w-100 text-center" style={{border: `2px solid ${theming.whiteBlack.code}`, 'border-radius': '15px' }}><GrMoney className="fs-3 mx-2" />{menuData?.[0].pUni} €/<BsPersonPlusFill className=" mb-1" /></p>
                                                     </Col>
                                                     
                                                 </Row>
                                                
                                               
                                                 <Row>
-                                                    <div className="w-100 h-100 bg-success text-center p-5 bdRadiusCarr">
+                                                    <div className="w-100 h-100 text-center p-3 ">
                                                         <div>
                                                             <Row>
 
@@ -100,23 +111,23 @@ function OfferById() {
                                                                         <img
                                                                             alt=""
                                                                             src={`https://vast-everglades-16758.herokuapp.com/${menuData?.[0].file}`} //ojito con esto!!
-                                                                            width="200px"
-                                                                            height="200px"
-                                                                            className="d-inline-block align-top m-2 rounded"
+                                                                            width="100px"
+                                                                            height="100px"
+                                                                            className="d-inline-block align-top m-1 rounded"
                                                                         /></div>
-                                                                    <div className="mt-2">
-                                                                        <h2>{menuData?.[0].nameRest}</h2>
+                                                                    <div className="mt-3">
+                                                                        <h2 className="fs-3">{menuData?.[0].nameRest}</h2>
                                                                     </div>
 
-                                                                    <div className="mt-2">
-                                                                        <h4>{menuData?.[0].addressRest}</h4>
+                                                                    <div className="mt-1">
+                                                                        <h4 className="fs-5">{menuData?.[0].addressRest}</h4>
                                                                     </div>
-                                                                    <div className="mt-2">
-                                                                        <h5>{menuData?.[0].townRest} - {menuData?.[0].postalRest}</h5>
+                                                                    <div className="mt-1">
+                                                                        <h4 className="fs-5">{menuData?.[0].townRest} - {menuData?.[0].postalRest}</h4>
                                                                     </div>
-                                                                    <div className="mt-5">
-                                                                        <h5>Tipo de comida</h5>
-                                                                        <h4>{menuData?.[0].typeFood}</h4>
+                                                                    <div className="mt-3">
+                                                                        <h5 className="fs-4">{t('byID.x1')}</h5>
+                                                                        <h4 className="fs-5">{menuData?.[0].typeFood}</h4>
                                                                     </div>
 
 
@@ -135,31 +146,38 @@ function OfferById() {
                                                     <Row>
                                                         <Carousel>
                                                             <Carousel.Item>
-                                                                <div className="w-100 h-100 bg-warning text-center p-5 bdRadiusCarr">
-                                                                    <h4>MENU</h4>
-                                                                    <p> Primer Plato</p>
-                                                                    <p> {menuData ? menuData[0].FirstPlaEsp : ""}</p>
-                                                                    <p> Segundo Plato</p>
-                                                                    <p> {menuData ? menuData[0].SecondPlaEsp : ""}</p>
-                                                                    <p> Postre</p>
-                                                                    <p> {menuData ? menuData[0].CandyPlaEsp : ""}</p>
-                                                                    <p> Bebida y otros</p>
-                                                                    <p> {menuData ? menuData[0].DrinkPlaEsp : ""}</p>
-
+                                                                <div className="w-100 h-100 text-center p-5 ">
+                                                                    <h4>MENU  <img alt="" src={espFlg} width="25" height="25" className="d-inline-block align-top mx-1" /> </h4>
+                                                                    <p className="m-0 p-0"> Primer Plato</p>
+                                                                    <p className="m-0 p-0 pb-2"> {menuData ? menuData[0].FirstPlaEsp : ""}</p>
+                                                                    <hr className="m-0 p-0"></hr>
+                                                                    <p className="m-0 p-0"> Segundo Plato</p>
+                                                                    <p className="m-0 p-0 pb-2">  {menuData ? menuData[0].SecondPlaEsp : ""}</p>
+                                                                    <hr className="m-0 p-0"></hr>
+                                                                    <p className="m-0 p-0"> Postre</p>
+                                                                    <p className="m-0 p-0 pb-2"> {menuData ? menuData[0].CandyPlaEsp : ""}</p>
+                                                                    <hr className="m-0 p-0"></hr>
+                                                                    <p className="m-0 p-0"> Bebida y otros</p>
+                                                                    <p className="m-0 p-0 pb-2"> {menuData ? menuData[0].DrinkPlaEsp : ""}</p>
+                                                                    <hr className="m-0 p-0 "></hr>
                                                                 </div>
 
                                                             </Carousel.Item>
                                                             <Carousel.Item>
-                                                                <div className="w-100 h-100 bg-success text-center p-5 bdRadiusCarr">
-                                                                    <h4>MENU</h4>
-                                                                    <p> Primer Plato</p>
-                                                                    <p> {menuData ? menuData[0].FirstPlaIng : ""}</p>
-                                                                    <p> Segundo Plato</p>
-                                                                    <p> {menuData ? menuData[0].SecondPlaIng : ""}</p>
-                                                                    <p> Postre</p>
-                                                                    <p> {menuData ? menuData[0].CandyPlaIng : ""}</p>
-                                                                    <p> Bebida y otros</p>
-                                                                    <p> {menuData ? menuData[0].DrinkPlaIng : ""}</p>
+                                                                <div className="w-100 h-100  text-center p-5 bdRadiusCarr">
+                                                                    <h4>MENU <img alt="" src={ukFlg} width="25" height="25" className="d-inline-block align-top mx-1" /></h4>
+                                                                    <p className="m-0 p-0"> First</p>
+                                                                    <p className="m-0 p-0 pb-2"> {menuData ? menuData[0].FirstPlaIng : ""}</p>
+                                                                    <hr className="m-0 p-0"></hr>
+                                                                    <p className="m-0 p-0"> Second</p>
+                                                                    <p className="m-0 p-0 pb-2"> {menuData ? menuData[0].SecondPlaIng : ""}</p>
+                                                                    <hr className="m-0 p-0"></hr>
+                                                                    <p className="m-0 p-0">  Dessert</p>
+                                                                    <p className="m-0 p-0 pb-2"> {menuData ? menuData[0].CandyPlaIng : ""}</p>
+                                                                    <hr className="m-0 p-0"></hr>
+                                                                    <p className="m-0 p-0"> Drinks and others</p>
+                                                                    <p className="m-0 p-0 pb-2"> {menuData ? menuData[0].DrinkPlaIng : ""}</p>
+                                                                    <hr className="m-0 p-0 "></hr>
 
                                                                 </div>
                                                             </Carousel.Item>
@@ -170,14 +188,14 @@ function OfferById() {
                                                     
                                                     {
                                                         menuData ? menuData[0].status === "PENDDING" ? <Col xs={{ span: 8, offset: 2 }}>
-                                                            <div type='button' className="w-100 bg-warning text-center mt-5 rounded-pill" onClick={handleShow}>
-                                                                <p className="p-4">RESERVAR <HiOutlineBadgeCheck /></p>
+                                                            <div type='button' className="w-100  text-center mt-5 rounded-pill " style={{'background-color': `#ffee58`}} onClick={handleShow}>
+                                                                <p className="p-4" style={{color: 'black'}}>RESERVAR <HiOutlineBadgeCheck /></p>
                                                             </div>
                                                         </Col> 
                                                         :
                                                         <Col xs={{ span: 8, offset: 2 }}>
-                                                            <div type='button' className="w-100 bg-danger text-center mt-5 rounded-pill">
-                                                                <p className="p-4">RESERVADO <BsPatchCheck /></p>
+                                                            <div type='button' className="w-100 bg-danger text-center mt-5 rounded-pill"  style={{'background-color': `#d32f2f`}}>
+                                                                <p className="p-4" style={{color: 'white'}}>RESERVADO <BsPatchCheck /></p>
                                                             </div>
                                                         </Col> 
                                                         : 

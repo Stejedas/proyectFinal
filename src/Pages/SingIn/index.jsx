@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useContext } from "react"
 import HeaderPage from "../../Components/Header/headerHomePage"
 import FooterPage from "../../Components/Footer";
 import { Stack, Form, Col, Row, Container, Button } from "react-bootstrap";
@@ -7,11 +7,14 @@ import { useTranslation } from "react-i18next";
 import { postLogInUser } from "../../APP/index.jsx";
 import { useNavigate } from "react-router-dom";
 import { getUserData } from "../../APP/index.jsx";
+import { ThemingContext } from "../../Components/mult-theming/theming.context";
 
 
 function SingIn(){
     const [t, i18n] = useTranslation("global");
     let navigate = useNavigate();
+
+    const [theming] = useContext(ThemingContext)
 
     const handleSubmitSignIn = e => {
         e.preventDefault()
@@ -33,8 +36,8 @@ function SingIn(){
     return (
         <React.Fragment>
             <HeaderPage></HeaderPage>
-            <Container>
-            <Row className="mt-5 pt-5 d-flex align-items-center " > 
+            <Container fluid style={{'background-color': `${theming.blueN.code}`, color: `${theming.whiteBlack.code}`, "min-height": '750px'}}>
+            <Row className=" pt-3 d-flex align-items-center " > 
             <Col className="mt-5 pt-5 border border-3 rounded-3" xs={{ span: 10, offset: 1 }} sm={{ span: 6, offset: 3 }}>
                                     <Form className='pb-5' onSubmit={handleSubmitSignIn}>
                                     <h3 className="mt-3 text-center">{t('login.x2')}</h3>
@@ -64,7 +67,7 @@ function SingIn(){
                                         </Col>
                                         <p className="text-center mt-3"> {t('login.x7')}</p>
                                         <Col className="d-flex justify-content-center">
-                                            <Button variant="secondary" active className="mb-3">
+                                            <Button variant="secondary" active className="mb-3" style={{'background-color': `${theming.blueN.code}`, color: `${theming.whiteBlack.code}`}}>
 
                                             {t('login.x11')}
                                             </Button>

@@ -29,7 +29,7 @@ function App() {
         <Route path='/supplier' element={<ProtectedRouteUser><SupplierPage></SupplierPage></ProtectedRouteUser>} />
         <Route path='/customer/:offer' element={<ProtectedRouteUser><OfferById></OfferById></ProtectedRouteUser>} />
         <Route path='/rest' element={<ProtectedRouteUser><RestInformation></RestInformation></ProtectedRouteUser>} />
-        <Route path='/rate' element={<ProtectedRouteUser><RateValoration></RateValoration></ProtectedRouteUser>} />
+        <Route path='/rate' element={<RateValoration></RateValoration>} />
         <Route path='*' element={<ProtectedRouteUser><PageError></PageError></ProtectedRouteUser>} />
         
       </Routes>

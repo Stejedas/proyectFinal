@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import FooterPage from "../../Components/Footer";
 import HeaderPage from "../../Components/Header/headerHomePage";
 import { Container, Row, Col, InputGroup, FormControl, Form, Button } from "react-bootstrap";
@@ -7,11 +7,15 @@ import './style.css'
 import { useTranslation } from "react-i18next";
 import { postSendEmailAndPassword } from "../../APP/index.jsx";
 import { Link } from "react-router-dom";
+import { ThemingContext } from "../../Components/mult-theming/theming.context";
+
 
 
 function SingInCompany() {
 
     const [t] = useTranslation("global");
+
+   const [theming] = useContext(ThemingContext)
 
     const handleSubmit = e => {
         e.preventDefault()
@@ -43,11 +47,11 @@ function SingInCompany() {
     return (
         <React.Fragment>
             <HeaderPage></HeaderPage>
-            <div className="companyImgBg vh-100 pt-5">
-                <Container fluid>
+            <div className="companyImgBg pt-5" style={{'min-height': "900px"}}>
+                <Container fluid >
                     <Row className="">
                         <Col xs={{ span: 10, offset: 1 }} md={{ span: 8, offset: 2 }} lg={{ span: 5, offset: 0 }} xl={{ span: 4, offset: 2 }}>
-                            <Form noValidate validated='' onSubmit={handleSubmit}>
+                            <Form noValidate validated='' className="p-3 px-5" onSubmit={handleSubmit} style={{'background-color': `${theming.blueN.code}`, color: `${theming.whiteBlack.code}`, 'border-radius': "15px"}}>
                                 <Row className="mb-3">
                                     <Col xs={6}>
                                         <Form.Group md="4" controlId="validationCustom011">
@@ -209,7 +213,7 @@ function SingInCompany() {
                                     />
                                      </Link>
                                 </Form.Group>
-                                <Button type="submit">Submit form</Button>
+                                <Button type="submit" style={{'background-color': `${theming.blueN.code}`, color: `${theming.whiteBlack.code}`}} >Submit form</Button>
                             </Form>
 
                         </Col>

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Container, Row, Col, Carousel, Card } from "react-bootstrap";
+import { Container, Row, Col, Carousel, Card, Form } from "react-bootstrap";
 import { Tab, Tabs } from "react-bootstrap";
 import { BsGridFill } from 'react-icons/bs';
 import { BsFillGrid3X3GapFill, BsInfoCircle } from 'react-icons/bs';
@@ -26,6 +26,7 @@ function CustomerLanding() {
     const [t] = useTranslation("global");
 
     const [allOffer, uploadAllOffer] = useState()
+    const [allUnderFilter, uploadAllUnderFilter] = useState([])
 
     const token = localStorage.getItem('token');
 
@@ -38,22 +39,37 @@ function CustomerLanding() {
 
     useEffect(async () => {
         uploadAllOffer(await GetAllOfferts(token))
-
+        uploadAllUnderFilter(await GetAllOfferts(token))
     }, [])
 
     const handleSeeMore = e => {
         console.log(e.target)
 
     }
+
+    const handleFilter = e => {
+        e.preventDefault()
+        const valueFilter = e.target.group1.value
+        console.log(valueFilter)
+        if(valueFilter !== 'all'){
+        console.log(allUnderFilter.filter(e=> e.typeFood === valueFilter))
+        uploadAllOffer(allUnderFilter.filter(e=> e.typeFood === valueFilter))
+        } else if(valueFilter === "all") {
+            uploadAllOffer(allUnderFilter)
+        }
+
+    }
+    console.log(allUnderFilter)
+
     return (
         <React.Fragment>
-            <Container className="mb-5 pb-5" style={{'background-color': `${theming.backA.code}` , 'min-height': '800px'}} >
+            <Container className="mb-5 pb-5" style={{ 'background-color': `${theming.backA.code}`, 'min-height': '800px' }} fluid >
                 <Row>
                     <Col xs={6} md={{ span: 4, offset: 3 }} lg={{ span: 4, offset: 3 }} xl={{ span: 4, offset: 3 }} >
                         <Carousel className="mt-3 mb-2 carousel-fade slide " controls={false} indicators={false} slide={true}>
 
                             {
-                                allOffer ? allOffer.map(e => {
+                                allUnderFilter ? allUnderFilter.map(e => {
                                     return (
 
                                         <Carousel.Item >
@@ -95,7 +111,7 @@ function CustomerLanding() {
                         <Carousel className="mt-3 mb-2 carousel-fade slide " controls={false} indicators={false} slide={true}>
 
                             {
-                                allOffer ? allOffer.map(e => {
+                                allUnderFilter ? allUnderFilter.map(e => {
                                     return (
 
                                         <Carousel.Item >
@@ -135,8 +151,87 @@ function CustomerLanding() {
                     </Col>
                 </Row>
                 <Row>
+                    {/* IM WORK HERE */}
                     <Col xs={12} md={3} lg={3} xl={3} className="px-2">
-                        <div className='filtro'></div>
+                        <div className='filtro p-3 mb-2 d-flex flex-column'>
+                            <Form onSubmit={handleFilter} className='d-flex flex-column'>
+                                <h5> {t('typeFood.x8')}</h5>
+                                <Form.Check
+                                    inline
+                                    label={t('typeFood.x9')}
+                                    name="group1"
+                                    value='all'
+                                    type='radio'
+                                    id={`inline-radio-1`}
+                                    className='mx-3'
+                                />
+                                <Form.Check
+                                    inline
+                                    label={t('typeFood.x1')}
+                                    value='standard'
+                                    name="group1"
+                                    type='radio'
+                                    className='mx-3'
+                                    id={`inline-radio-2`}
+                                />
+                                     <Form.Check
+                                    inline
+                                    label={t('typeFood.x2')}
+                                    value='japanese'
+                                    name="group1"
+                                    type='radio'
+                                    className='mx-3'
+                                    id={`inline-radio-3`}
+                                />
+                                     <Form.Check
+                                    inline
+                                    label={t('typeFood.x3')}
+                                    value='asiatic'
+                                    name="group1"
+                                    type='radio'
+                                    className='mx-3'
+                                    id={`inline-radio-4`}
+                                />
+                                     <Form.Check
+                                    inline
+                                    label={t('typeFood.x4')}
+                                    value='chinese'
+                                    name="group1"
+                                    type='radio'
+                                    className='mx-3'
+                                    id={`inline-radio-5`}
+                                />
+                                     <Form.Check
+                                    inline
+                                    label={t('typeFood.x5')}
+                                    value='american'
+                                    name="group1"
+                                    type='radio'
+                                    className='mx-3'
+                                    id={`inline-radio-6`}
+                                />
+                                     <Form.Check
+                                    inline
+                                    label={t('typeFood.x6')}
+                                    value='fastFood'
+                                    name="group1"
+                                    type='radio'
+                                    className='mx-3'
+                                    id={`inline-radio-7`}
+                                />
+                                 <Form.Check
+                                    inline
+                                    label={t('typeFood.x7')}
+                                    value='vegan'
+                                    name="group1"
+                                    type='radio'
+                                    className='mx-3'
+                                    id={`inline-radio-8`}
+                                />
+                                <Button variant="secondary" className="mb-2 mt-4" type='submit'>Secondary</Button>
+                            </Form>
+
+                        </div>
                     </Col>
                     <Col xs={12} md={9} lg={9} xl={9}>
                         <Container className="mt-2 p-0" fluid>
@@ -145,7 +240,7 @@ function CustomerLanding() {
                                 <Col xs={12}>
                                     <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="mb-3 w-100">
                                         {/* TABLE 1 */}
-                                        <Tab eventKey="home" title={<BsGridFill className="fs-3"  />}>
+                                        <Tab eventKey="home" title={<BsGridFill className="fs-3" />}>
                                             <Container fluid className="px-1 pb-5" >
                                                 <Row >
 
@@ -211,13 +306,13 @@ function CustomerLanding() {
                                                                 return (
                                                                     <Col xs={6} md={4} lg={2} xl={2} key={e.idOffer} className='mt-3 p-xl-2'  >
 
-                                                                        <div className="w-100 p-1"  style={{ 'color': `${theming.whiteBlack.code}`, 'background-color': `${theming.cardN.code}`, 'border-radius': '25px' }}>
+                                                                        <div className="w-100 p-1" style={{ 'color': `${theming.whiteBlack.code}`, 'background-color': `${theming.cardN.code}`, 'border-radius': '25px' }}>
                                                                             <div className="d-flex flex-row justify-content-between">
                                                                                 <div className="d-flex align-items-star p-0 m-0 mx-1 flex-column fs-9">
                                                                                     <strong className="m-0 p-0 text-center fs-8">{e.hour} h </strong>
                                                                                     <strong className="m-0 p-0 text-center fs-8"> {e.day}</strong>
                                                                                 </div>
-                                                                                <div className="fs-9 d-flex align-items-center text-center p-2  rounded-circle" style={{border: `1px solid ${theming.whiteBlack.code}`}}>
+                                                                                <div className="fs-9 d-flex align-items-center text-center p-2  rounded-circle" style={{ border: `1px solid ${theming.whiteBlack.code}` }}>
                                                                                     {e.diners} P
                                                                                 </div>
                                                                             </div>
@@ -231,7 +326,7 @@ function CustomerLanding() {
                                                                                         width="100vh"
 
 
-                                                                                        className="d-inline-block align-top p-2 rounded-pill" style={{border: `1px solid ${theming.whiteBlack.code}`}}
+                                                                                        className="d-inline-block align-top p-2 rounded-pill" style={{ border: `1px solid ${theming.whiteBlack.code}` }}
                                                                                     />
                                                                                 </div>
                                                                             </Link>

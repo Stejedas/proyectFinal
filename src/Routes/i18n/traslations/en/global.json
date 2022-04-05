@@ -22,6 +22,9 @@
         "x12": "Forgotten your password?",
         "x13": "Remember me"
     },
+    "byID":{
+        "x1": "type of food"
+    },
     "verify":{
         "x1": "We are processing your request, please wait a moment while your request is being processed"
         
@@ -119,7 +122,9 @@
           "x4": "Chinese",
           "x5": "American",
           "x6": "Fast food",
-          "x7": "Vegan"
+          "x7": "Vegan",
+          "x8": "Type of food:",
+          "x9": "All"
     },
     "books":{
         "x1": " You are about to make the following reservation, please check it before accepting",
@@ -133,8 +138,10 @@
     },
     "rate":{
         "x1": "Let us know what you think",
-        "x2": "Send"
-
+        "x2": "Send",
+        "x3": "User rating",
+        "x4": "User satisfaction level",
+        "x5": "View details"
     }
     
 }

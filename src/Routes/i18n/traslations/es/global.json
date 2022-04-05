@@ -21,6 +21,9 @@
         "x12": "Olvidé mi contraseña",
         "x13": "Recordar contraseña"
     },
+    "byID":{
+        "x1": "Tipo de comida"
+    },
     "verify":{
         "x1": "Estamos procesando su solicitud, espero un momento mientras se realiza"
     },
@@ -118,7 +121,9 @@
           "x4": "Chino",
           "x5": "Americano",
           "x6": "Comida rápida",
-          "x7": "Vegano"
+          "x7": "Vegano",          
+          "x8": "Tipos de comida:",
+          "x9": "Todas"
     },
     "books":{
         "x1": "Va a realizar la siguiente reserva, revísela antes de aceptar",
@@ -132,7 +137,10 @@
     },
     "rate":{
         "x1": "Dejenos su opinion",
-        "x2": "Enviar"
+        "x2": "Enviar",
+        "x3": "Valoracion de los usuarios",
+        "x4": "Nivel de satisfaccion de los usuarios",
+        "x5": "Ver detalles"
     }
     
 }

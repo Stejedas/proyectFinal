@@ -449,14 +449,14 @@ function TableSup(props) {
                             <Row>
                                 <Form.Group className="mb-3" controlId="exampleForm.imgRest">
                                     <Form.Select aria-label="Default select example" name="typeFood">
-                                        <option>TYPO DE COMIDA</option>
-                                        <option value="standard">ESTANDAR</option>
-                                        <option value="japanese">JAPONESA</option>
-                                        <option value="asiatic">ASIATICA</option>
-                                        <option value="chinese">CHINA</option>
-                                        <option value="american">AMERICANA</option>
-                                        <option value="fastFood">FAST FOOD</option>
-                                        <option value="vegan">VEGANO</option>
+                                        <option>{t('typeFood.x8')}</option>
+                                        <option value="standard">{t('typeFood.x1')}</option>
+                                        <option value="japanese">{t('typeFood.x2')}</option>
+                                        <option value="asiatic">{t('typeFood.x3')}</option>
+                                        <option value="chinese">{t('typeFood.x4')}</option>
+                                        <option value="american">{t('typeFood.x5')}</option>
+                                        <option value="fastFood">{t('typeFood.x6')}</option>
+                                        <option value="vegan">{t('typeFood.x7')}</option>
                                     </Form.Select>
                                 </Form.Group>
                             </Row>

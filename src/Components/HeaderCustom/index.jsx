@@ -122,7 +122,9 @@ function HeaderCustom(props) {
                                            <p style={{ 'color': `${theming.whiteBlack.code}`}}>{e.addressRest}</p>
                                            <p style={{ 'color': `${theming.whiteBlack.code}`}}>{e.day}</p>
                                            <p style={{ 'color': `${theming.whiteBlack.code}`}}>{e.hour}</p>
-                                           </div> : "" )
+                                           <hr></hr>
+                                           </div>
+                                           : "" )
                                            :
                                             "" }
                                             

@@ -1,10 +1,11 @@
 
-import React from "react"
+import React, { useContext } from "react"
 import { Container, Col, Row, Form, Button } from "react-bootstrap"
 import { useTranslation } from "react-i18next";
 import { NavigationType, useSearchParams } from "react-router-dom";
 import { PostRate } from "../../APP/index.jsx";
 import { useNavigate } from "react-router-dom";
+import { ThemingContext } from "../mult-theming/theming.context.js";
 
 function RateComponent() {
 
@@ -14,6 +15,7 @@ function RateComponent() {
 
     const [t] = useTranslation("global");
 
+    const [theming] = useContext(ThemingContext)
     let navigate = useNavigate();
 
     const SendValoration = e => {
@@ -38,9 +40,9 @@ function RateComponent() {
     console.log(idOffer)
     return (
         <React.Fragment>
-            <Container>
+            <Container style={{'background-color': `${theming.backA.code}`, color: `${theming.whiteBlack.code}`, "min-height": '750px'}} fluid>
                 <Row>
-                    <Col xs={{ span: 10, offset: 1 }} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }} xl={{ span: 6, offset: 3 }} className="mt-5 bg-warning">
+                    <Col xs={{ span: 10, offset: 1 }} md={{ span: 6, offset: 3 }} lg={{ span: 6, offset: 3 }} xl={{ span: 6, offset: 3 }} className="mt-5" style={{'background-color': `${theming.blueN.code}`}}>
                         <Form onSubmit={SendValoration}>
                             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                                 <Container fluid>
@@ -66,7 +68,7 @@ function RateComponent() {
                                 <Form.Label>{t('rate.x1')}</Form.Label>
                                 <Form.Control as="textarea" name="textareaRate" rows={5} />
                             </Form.Group>
-                            <Button variant="outline-success" type="submit">{t('rate.x2')}</Button>
+                            <Button variant="outline-success" className="w-100 m-2" type="submit" style={{'background-color': `${theming.blueN.code}`, color: `${theming.whiteBlack.code}`}}>{t('rate.x2')}</Button>
                         </Form>
                     </Col>
                 </Row>
