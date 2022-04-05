@@ -1,29 +1,37 @@
-# TheLastTable - proyectFinalBootcamp_Front 
+# Título del Proyecto
 
-Final Project of the Full Stack Developer Bootcamp 2022 NEOLAND
+Proyecto Final del Bootcamp Full Stack Developer 2022 NEOLAND
 
-Functional App to make table reservations in restaurants, I have tried to demonstrate how much I have learned during the Bootcamp.
+App funcional para realizar reservas de mesas en restaurantes, he intentado demostrar lo mucho que he aprendido durante el Bootcamp.
 
-The project consists of two parts, the frontend, in this repository; and the backend, in the repository "proyectoFinalBootcamp_Back".
+El proyecto consta de dos partes, el front, en este repositorio; y el backend, en el repositorio "proyectoFinalBootcamp_Back".
 
-## Getting Started 🚀
+## Comenzando 🚀
 
-This is a public repository, you can Fork to see all the details you need. 
+Se trata de un repositorio publico, puede hacer Fork para ver todos los detalles que necesite. 
 
-## Starting in development mode
+## Inicio en modo desarrollo
 
-In the project directory, you can run:
+En el directorio del proyecto, puede ejecutar:
 
 ### npm start
 
-Run the application in development mode.
-Open http://localhost:3000 to view it in your browser.
+Ejecuta la aplicación en el modo de desarrollo.
+Abra http://localhost:3000 para verlo en su navegador.
 
-## Built with 🛠️
+## Inicie en modo usuario
 
-Built with React and NodeJS.
+La pagina fue desplegada con Netlify para el Front-end, para acceder a la web siga el siguiente enlace:
 
-I've used different libraries for some functionality:
+https://clinquant-taffy-da618e.netlify.app/home
+
+**Se trata de la V.01, entienda que solo acabo de comenzar**
+
+## Construido con 🛠️
+
+Construido con React y NodeJS.
+
+He usado diferentes librerías para algunas funcionalidades:
 - i18n
 - Mapbox-gl
 - Boostrap-react
@@ -35,12 +43,17 @@ I've used different libraries for some functionality:
 - UUID
 - ...
 
-## Contributing 🖇️
 
-I would be happy for all your suggestions as I haven't been into programming for long and all my desire is to learn.
+## Contribuyendo 🖇️
 
-## Authors ✒️
+Estaría encantado de todas vuestras sugerencias ya que no llevo mucho en la programación y todo mi deseo es aprender.
 
-* ** **Sergio Tejeda Sánchez de la morena** - *Total work* - [Stejedas](https://github.com/Stejedas)
+## Autores ✒️
 
-The project has been completed in a total of 2 weeks.
+* **Sergio Tejeda Sánchez de la morena** - *Trabajo total* - [Stejedas](https://github.com/Stejedas)
+
+El proyecto ha sido realizado en un total de 2 semanas.
+
+Gracias a mis profesores del bootcamp por todo lo aprendido:
+* **Alejandro González** - [agonsant](https://github.com/agonsant)
+* **Jose Tovar** - [JoseAtovarC](https://github.com/JoseAtovarC)
