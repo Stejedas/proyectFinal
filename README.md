@@ -4,7 +4,7 @@ Final Project of the Full Stack Developer Bootcamp 2022 NEOLAND
 
 Functional App to make table reservations in restaurants, I have tried to demonstrate how much I have learned during the Bootcamp.
 
-The project consists of two parts, the frontend, in this repository; and the backend, in the repository "proyectoFinalBootcamp_Back".
+The project consists of two parts, the frontend, in this repository; and the backend, in the repository [projectFinalBootcamp_Back](https://github.com/Stejedas/proyectFinalBootcamp_Back).
 
 ## Getting Started 🚀
 
