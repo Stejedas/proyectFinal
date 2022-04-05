@@ -56,6 +56,3 @@ The project has been completed in a total of 2 weeks.
 Thanks to my bootcamp teachers for everything I learned:
 ** **Alejandro González** - [agonsant](https://github.com/agonsant)
 ** **Jose Tovar** - [JoseAtovarC](https://github.com/JoseAtovarC)
-
-
-Translated with www.DeepL.com/Translator (free version)
