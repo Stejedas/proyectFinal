@@ -1,37 +1,37 @@
-# Título del Proyecto
+# THELASTTABLE - proyectFinalBootcamp_Front
 
-Proyecto Final del Bootcamp Full Stack Developer 2022 NEOLAND
+Final Project of the Full Stack Developer Bootcamp 2022 NEOLAND
 
-App funcional para realizar reservas de mesas en restaurantes, he intentado demostrar lo mucho que he aprendido durante el Bootcamp.
+Functional App to make table reservations in restaurants, I have tried to demonstrate how much I have learned during the Bootcamp.
 
-El proyecto consta de dos partes, el front, en este repositorio; y el backend, en el repositorio "proyectoFinalBootcamp_Back".
+The project consists of two parts, the frontend, in this repository; and the backend, in the repository "proyectoFinalBootcamp_Back".
 
-## Comenzando 🚀
+## Getting Started 🚀
 
-Se trata de un repositorio publico, puede hacer Fork para ver todos los detalles que necesite. 
+This is a public repository, you can Fork to see all the details you need. 
 
-## Inicio en modo desarrollo
+## Starting in development mode
 
-En el directorio del proyecto, puede ejecutar:
+In the project directory, you can run:
 
 ### npm start
 
-Ejecuta la aplicación en el modo de desarrollo.
-Abra http://localhost:3000 para verlo en su navegador.
+Run the application in development mode.
+Open http://localhost:3000 to view it in your browser.
 
-## Inicie en modo usuario
+## Start in user mode
 
-La pagina fue desplegada con Netlify para el Front-end, para acceder a la web siga el siguiente enlace:
+The page was deployed with Netlify for the Front-end, to access the web follow the following link:
 
 https://clinquant-taffy-da618e.netlify.app/home
 
-**Se trata de la V.01, entienda que solo acabo de comenzar**
+**This is V.01, understand that I have just started**.
 
-## Construido con 🛠️
+## Built with 🛠️
 
-Construido con React y NodeJS.
+Built with React and NodeJS.
 
-He usado diferentes librerías para algunas funcionalidades:
+I've used different libraries for some functionality:
 - i18n
 - Mapbox-gl
 - Boostrap-react
@@ -43,17 +43,19 @@ He usado diferentes librerías para algunas funcionalidades:
 - UUID
 - ...
 
+## Contributing 🖇️
 
-## Contribuyendo 🖇️
+I would be happy for all your suggestions as I haven't been into programming for long and all my desire is to learn.
 
-Estaría encantado de todas vuestras sugerencias ya que no llevo mucho en la programación y todo mi deseo es aprender.
+## Authors ✒️
 
-## Autores ✒️
+* ** **Sergio Tejeda Sánchez de la morena** - *Total work* - [Stejedas](https://github.com/Stejedas)
 
-* **Sergio Tejeda Sánchez de la morena** - *Trabajo total* - [Stejedas](https://github.com/Stejedas)
+The project has been completed in a total of 2 weeks.
 
-El proyecto ha sido realizado en un total de 2 semanas.
+Thanks to my bootcamp teachers for everything I learned:
+** **Alejandro González** - [agonsant](https://github.com/agonsant)
+** **Jose Tovar** - [JoseAtovarC](https://github.com/JoseAtovarC)
 
-Gracias a mis profesores del bootcamp por todo lo aprendido:
-* **Alejandro González** - [agonsant](https://github.com/agonsant)
-* **Jose Tovar** - [JoseAtovarC](https://github.com/JoseAtovarC)
+
+Translated with www.DeepL.com/Translator (free version)
